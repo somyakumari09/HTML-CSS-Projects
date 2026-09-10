@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.login p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    color: #777;
+}
+
+.show-password {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    color: #777;
+    cursor: pointer;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px 14px 14px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2563EB;
+}
+
+.remember-password {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-password label {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.remember-password a {
+    margin-left: auto;
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.remember-password a:hover {
+    text-decoration: underline;
+}
+
+.sign-in {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563EB;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.sign-in:hover {
+    background-color: #1D4ED8;
+}
+
+.or-divider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.or-divider span {
+    flex: 1;
+    height: 1.5px;
+    background-color: #ddd;
+}
+
+.or-divider p {
+    margin: 0;
+    width: 50px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.google-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.google-logo {
+    background-image: url("google-logo.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    font-size: 0.9rem;
+}
+
+.sign-up p {
+    color: gray;
+    margin: 0;
+}
+
+.sign-up a {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .login{
+        padding: 25px;
+    }
+}

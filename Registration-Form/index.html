@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="container">
+        <div class="registration">
+            <div class="header">
+                <i class="fa-solid fa-user-plus user-icon"></i>
+                <h1>Create Account</h1>
+                <p>Join us today! Please fill in the details to get started</p>
+            </div>
+            <form>
+                <label for="name">Full Name</label>
+                <div class="input-box">
+                    <i class="fa-regular fa-user icon"></i>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name">
+                </div>
+                <label for="email">Email Address</label>
+                <div class="input-box">
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </div>
+                <label for="date">Date of Birth</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                    <input type="date" name="date" id="date">
+                </div>
+                <label for="number">Phone Number</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <input type="tel" name="number" id="number" placeholder="Enter your phone number">
+                </div>
+                <label for="password">Password</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <input type="password" name="password" id="password" placeholder="Create a password">
+                    <i class="fa-regular fa-eye-slash password-toggle"></i>
+                </div>
+                <label for="confirm-password">Confirm Password</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                    <i class="fa-regular fa-eye-slash password-toggle"></i>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">
+                        I agree to
+                        <a href="#">Terms & Conditions</a>
+                        and
+                        <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+
+            <div class="divider">
+                <span></span>
+                <p>or register with</p>
+                <span></span>
+            </div>
+
+            <div class="option">
+                <button type="button" class="option-btn">
+                    <img src="images/google-logo.png" alt="Google" class="google-logo">
+                    Google</button>
+                <button type="button" class="option-btn">
+                    <img src="images/microsoft.png" alt="microsoft" class="microsoft-logo">
+                    Microsoft</button>
+            </div>
+
+            <div class="sign-in">
+                <p>Already have an account?</p>
+                <a href="#">Sign in</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

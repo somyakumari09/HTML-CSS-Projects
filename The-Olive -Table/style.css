@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f5ef;
+}
+
+.page {
+    padding: 20px 40px;
+}
+
+.header {
+    color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    background-image: url("image/logo.png");
+    height: 70px;
+    width: 500px;
+    background-size: cover;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    width: 35px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    background-color: black;
+    margin: 7px 0;
+}
+
+.navbar {
+    margin-left: auto;
+
+}
+
+.close-menu {
+    display: none;
+}
+
+.navbar a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info {
+    width: 300px;
+    display: block;
+}
+
+.info a {
+    color: black;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.location,
+.opening-hours,
+.contact {
+    margin-bottom: 40px;
+}
+
+.location h3,
+.opening-hours h3,
+.contact h3 {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+.location p,
+.opening-hours p,
+.contact p {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.timing {
+    margin-top: 20px;
+}
+
+.dining {
+    background-image: url("image/dining.png");
+    background-size: cover;
+    height: 700px;
+    flex: 1;
+    margin: 0 0 10px 50px;
+}
+
+span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 50px auto;
+}
+
+.welcome {
+    width: calc(100% - 350px);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 40px 0 25px 350px;
+}
+
+.welcome-msg {
+    width: calc(100% - 350px);
+    margin: 10px 0 50px 350px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.msg1,
+.msg2 {
+    line-height: 1.5;
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-img {
+    height: 500px;
+    width: 24%;
+    background-size: cover;
+    margin-bottom: 16px;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(89, 59, 59);
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    margin-top: 10px;
+}
+
+.footer-navbar {
+    margin-bottom: 40px;
+}
+
+.footer-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1rem;
+}
+
+.footer p {
+    font-size: 0.95rem;
+    margin: 40px auto;
+    width: 800px;
+}
+
+.subscribe {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.subscribe:hover {
+    background-color: white;
+    color: rgb(89, 59, 59);
+}
+
+@media (max-width: 900px) {
+    .page {
+        padding: 20px 25px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 400px;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        width: 35px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f5ef;
+        gap: 25px;
+        z-index: 10;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    #menu-toggle:checked~.navbar {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 2rem;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    .info {
+        width: 200px;
+    }
+
+    .info a {
+        font-size: 1rem;
+    }
+
+    .info h3 {
+        font-size: 1.2rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .dining {
+        margin-left: 40px;
+    }
+
+    .welcome {
+        width: calc(100% - 230px);
+        margin: 50px 0 10px 230px;
+    }
+
+    .welcome-msg {
+        width: calc(100% - 230px);
+        margin: 30px 0 20px 230px;
+    }
+
+    .box-img {
+        height: 250px;
+    }
+
+    .footer p {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 40px 30px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 300px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dining {
+        order: -1;
+        width: 100%;
+        flex: none;
+        height: 600px;
+        margin: 0 0 40px 0;
+    }
+
+    .info {
+        order: 2;
+        width: 100%;
+    }
+
+    .welcome {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .welcome-msg {
+        width: 100%;
+        margin: 20px 0;
+        display: block;
+    }
+
+    .msg1,
+    .msg2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box-img {
+        height: 250px;
+        width: 48%;
+    }
+
+    .footer-navbar a {
+        font-size: 0.7rem;
+        margin: 3px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+        width: 300px;
+    }
+
+    .subscribe {
+        padding: 10px 16px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:400px) {
+    .logo {
+        width: 250px;
+        height: 35px;
+    }
+
+    .footer p {
+        width: 250px;
+    }
+}

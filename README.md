@@ -24,6 +24,11 @@ A responsive restaurant website designed for a fictional restaurant, The Olive T
 
 **Focus:** Restaurant layout, navigation, responsive design, image sections, content sections, and footer.
 
+### Knovera – Online Learning Platform
+A responsive online learning platform designed for students to explore courses and build practical skills.
+
+**Focus:** Navigation bar, hero section, course cards, categories, testimonials, call-to-action section, footer, and responsive design.
+
 ## Technologies
 
 - HTML5
